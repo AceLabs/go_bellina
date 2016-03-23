@@ -14,7 +14,7 @@ func init() {
 }
 
 func Clear() {
-	root = NewNode()
+	root = NewNode(nil)
 	root.Name = "root"
 
 	nodeStack = adt.NewStack()
@@ -26,7 +26,7 @@ func Root() {
 }
 
 func Div() {
-	node := NewNode()
+	node := NewNode(current)
 
 	current.Kids.PushBack(node)
 
